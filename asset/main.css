@@ -1,0 +1,540 @@
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.align-web {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.col-2 {
+    width: 50%;
+    float: left;
+}
+
+.col-3 {
+    width: 33.33333%;
+    float: left;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.none-style-list {
+    list-style: none;
+}
+
+.none-style-text {
+    text-decoration: none;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+.black-text {
+    color: #000;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.justify-text {
+    text-align: justify !important;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+
+/* header */
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#header .item>li {
+    float: left;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+#header .button {
+    position: relative;
+}
+
+#header .sub-item {
+    position: absolute;
+    display: none;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#header button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+}
+
+#header .sub-item li {
+    min-width: 160px;
+    padding: 8px 16px;
+}
+
+#header li:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+#header li:hover a {
+    color: #000;
+}
+
+#header li:hover button {
+    color: #000;
+    background-color: rgb(196, 196, 196);
+}
+
+#header .button:hover .sub-item {
+    display: block;
+}
+
+#search {
+    float: right;
+    padding: 12px 24px;
+}
+
+#search:hover {
+    background-color: rgb(230, 80, 80);
+}
+
+#view-list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px;
+    display: none;
+}
+#view-list:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* end header */
+
+
+/* main */
+
+#main {
+    margin-top: 46.5px;
+    text-align: center;
+}
+
+#slider {
+    position: relative;
+}
+
+#slider img {
+    width: 100%;
+    display: block;
+}
+
+#slider .content-slider {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    padding: 32px 16px;
+    bottom: 0;
+}
+
+#band h2 {
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Segoe UI, Arial, sans-serif;
+}
+
+#band .img-bandmember {
+    padding: 32px 0;
+    display: inline-block;
+}
+
+#band .img-bandmember img {
+    border-radius: 0.4;
+    width: 60%;
+}
+
+#tour .tour-content {
+    display: inline-block;
+}
+
+#tour h2 {
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Segoe UI, Arial, sans-serif;
+    ;
+}
+
+#tour li {
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: #757575;
+}
+
+#tour .sold-out {
+    display: inline-block;
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: #f44336;
+    font-size: 15px;
+    color: #fff;
+}
+
+#tour .selling {
+    margin-right: 16px;
+    padding: 0 8px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+}
+
+#tour-dates {
+    padding: 32px 8px;
+    margin: 0 -16px;
+    display: inline-block;
+}
+
+#tour-dates img {
+    display: block;
+    width: 100%;
+}
+
+#tour-dates img:hover {
+    opacity: 0.6;
+}
+
+#tour-dates .buy-ticket {
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+#tour-dates .infor-ticket {
+    padding: 0.01em 16px;
+}
+
+#tour-dates button {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#tour-dates button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#contact h2 {
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Segoe UI, Arial, sans-serif;
+}
+
+#contact>div {
+    padding: 32px 0;
+    display: inline-block;
+}
+
+#contact .infor-contact {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+#contact .name-email {
+    margin: 0 -16px 8px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+#contact .name-email div {
+    padding: 0 8px;
+}
+
+#contact input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0dfdf;
+}
+
+#contact button {
+    float: right;
+    margin: 16px 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#map img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    filter: grayscale(50%);
+}
+
+
+/* end  main */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    background-color: #f1f1f1;
+    opacity: 0.6;
+}
+
+#footer i:hover {
+    opacity: 0.6;
+}
+
+#footer p {
+    font-size: 15px;
+}
+
+#footer a {
+    color: #000;
+}
+
+
+/* ticket */
+
+#overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+#ticket {
+    padding: 0;
+    margin-top: 100px;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    animation: fadeIn linear .3s;
+}
+
+#header-ticket {
+    background-color: #009688;
+    padding: 32px 16px;
+    text-align: center;
+    position: relative;
+}
+
+#header-ticket h2 {
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Segoe UI, Arial, sans-serif;
+    ;
+}
+
+#header-ticket i {
+    font-size: 34px;
+}
+
+#header-ticket span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#infor-ticket {
+    padding: 0.01em 16px;
+}
+
+#infor-ticket input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d1d1;
+}
+
+#infor-ticket .pay {
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    padding: 16px;
+    margin: 16px 0;
+    display: block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#infor-ticket .pay:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#infor-ticket .close {
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: #f44336;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+#infor-ticket .help {
+    float: right;
+}
+
+#infor-ticket .close:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#header-ticket span:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#overlay.open {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+@media (max-width: 799px){
+    .align-web{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    #header{
+        height: 46.5px;
+        overflow:hidden;
+    }
+    #header .item > li{
+        float: none;
+    }
+
+    #header .sub-item li{
+        width: 600px;
+        min-width: 100%;
+    }
+
+    #header .sub-item li a{
+        margin-left: 50px;
+    }
+
+    #search{
+        display: none;
+    }
+
+    #view-list{
+        display: block;
+    }
+
+    #header.openMenu{
+        height: 232.5px;
+        overflow: visible;
+    }
+    #view-list.none_dl{
+        display: none;
+    }
+
+    #slider .content-slider{
+        display: none;
+    }
+
+    #band .img-bandmember div{
+        width: 100%;
+    }
+
+    #tour .buy-ticket{
+        width: 100%;
+    }
+
+    #contact .infor-contact{
+        width: 100%;
+    }
+
+    #contact .form{
+        width: 100%;
+    }
+
+    #contact .name-email{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact .name-email div{
+        width: 100%;
+        padding: 0;
+    }
+
+    #contact button {
+        width: 100%;
+    }    
+}
+
+
